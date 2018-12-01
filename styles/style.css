@@ -65,7 +65,7 @@ a {
     opacity: 1;
 }
 .menuWrapper:active{
-    padding: 4px 0 0 0px;
+    padding: 4px 0 0 0;
 }
 
 
@@ -86,7 +86,7 @@ a {
 }
 
 .menuList {
-    position: absolute;
+    position: absolute; !important;
     top: 100px;
     right: -13.1rem;
     min-width: 13rem;
