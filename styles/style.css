@@ -1,9 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 
@@ -27,27 +29,98 @@ a {
 .logo img {
     width: 250px;
     height: 100px;
+    user-select:none;
 }
 .header {
-    padding-top: 2%;
     height: 100px;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .header p {
     font-size: 0.8rem;
 }
+.headerText {
+    display: inherit;
+}
 .adress {
     color: white;
-    margin-left: 5%;
-    padding-right: 4%;
-    border-right: 1px solid white;
+    padding: 0 5%; !important;
+    border-right: 2px solid white;
     white-space: nowrap;
+    width: 50%;
 }
 .info {
     color: white;
     margin-left: 4%;
     white-space: nowrap;
 }
+.menuWrapper {
+    position: absolute;
+    right: 5%;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.menuWrapper:hover{
+    opacity: 1;
+}
+.menuWrapper:active{
+    padding: 4px 0 0 0px;
+}
 
+
+.menu {
+    color: white;
+    text-align: center;
+    width: 40px;
+
+}
+.imgContainer {
+    min-width: 30px;
+    margin:0 auto;
+}
+.menu span {
+    display:block;
+    font-size: 0.7rem;
+    user-select:none;
+}
+
+.menuList {
+    position: absolute;
+    top: 100px;
+    right: -13.1rem;
+    min-width: 13rem;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all ease 1s;
+}
+.menuList ul{
+    list-style: none;
+
+}
+
+.menuList ul li {
+    padding: 5px 0 5px 20px;
+    border-bottom: 1px solid #020101;
+    border-top: 1px solid #4b4040;
+    background: #000000b0;
+    cursor: pointer;
+    user-select:none;
+}
+.menuList ul li:hover {
+    background:#521951b0;
+}
+.menuList ul li:active {
+    background:#80247fb0;
+
+}
+.menuList ul li:first-child {
+     border-top: none;
+ }
+
+
+.menuList ul li:last-child {
+    border-bottom: none;
+}
