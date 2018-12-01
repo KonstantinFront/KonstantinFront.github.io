@@ -45,7 +45,7 @@ a {
 }
 .adress {
     color: white;
-    padding: 0 5%; !important;
+    padding: 0 5%;
     border-right: 2px solid white;
     white-space: nowrap;
     width: 50%;
